@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>नोंदणी - Multi Purpose Engineering School</title>
+    <title>Registration - Multi Purpose Engineering School</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,120 +13,120 @@
             <img src="assets/logo-placeholder.svg" alt="Multi Purpose Engineering School Logo" class="logo-img">
         </div>
         <h1 class="site-title">Multi Purpose Engineering School</h1>
-        <p class="site-tagline">गुंडगावन, जिल्हा सोलापुर (महाराष्ट्र)</p>
+        <p class="site-tagline">Gaudgaon, Bargi, Solapur, Maharashtra</p>
     </div>
     <nav class="site-nav">
         <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">होम</a></li>
-            <li><a href="about.html" class="nav-link">आम्हाबद्दल</a></li>
-            <li><a href="admissions.html" class="nav-link">प्रवेश</a></li>
-            <li><a href="register.html" class="nav-link active">नोंदणी</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li><a href="register.html" class="nav-link active">Register</a></li>
         </ul>
     </nav>
 </header>
 
 <main class="register-section">
     <div class="container">
-        <h2 class="text-center">विद्यार्थी नोंदणी</h2>
-        <p class="text-center">कृपया आवश्यक माहितीचा भरा</p>
+        <h2 class="text-center">Student Registration</h2>
+        <p class="text-center">Please fill out the required information</p>
 
         <form id="registrationForm" action="https://formspree.io/f/xzedowzvy" method="POST">
-            <input type="hidden" name="_subject" value="નवीन વિદ્યાર્થી નોંધણી">
+            <input type="hidden" name="_subject" value="New Student Registration">
             <input type="hidden" name="_captcha" value="false">
 
             <div class="info-card">
-                <h3>विद्यार्थी माहिती</h3>
+                <h3>Student Information</h3>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="student_name">पूर्ण नाव *</label>
-                        <input type="text" id="student_name" name="student_name" class="form-control" required placeholder="उदा. राहुल शिंदे">
+                        <label for="student_name">Full Name *</label>
+                        <input type="text" id="student_name" name="student_name" class="form-control" required placeholder="e.g. Rahul Shinde">
                     </div>
                     <div class="form-group">
-                        <label for="class_applied">कक्षा *</label>
+                        <label for="class_applied">Applied For *</label>
                         <select id="class_applied" name="class_applied" class="form-control" required>
-                            <option value="">निवडा</option>
-                            <option value="11th PCM">११थ - PCM</option>
-                            <option value="11th PCB">११थ - PCB</option>
-                            <option value="11th Commerce">११थ - Commerce</option>
-                            <option value="12th PCM">१२थ - PCM</option>
-                            <option value="12th PCB">१२थ - PCB</option>
-                            <option value="12th Commerce">१२थ - Commerce</option>
+                            <option value="">Select</option>
+                            <option value="11th PCM">11th - PCM</option>
+                            <option value="11th PCB">11th - PCB</option>
+                            <option value="11th Commerce">11th - Commerce</option>
+                            <option value="12th PCM">12th - PCM</option>
+                            <option value="12th PCB">12th - PCB</option>
+                            <option value="12th Commerce">12th - Commerce</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="student_mobile">मोबाईल</label>
-                        <input type="tel" id="student_mobile" name="student_mobile" class="form-control" placeholder="९८४११२३४५६">
+                        <label for="student_mobile">Student Mobile</label>
+                        <input type="tel" id="student_mobile" name="student_mobile" class="form-control" placeholder="9841123456">
                     </div>
                     <div class="form-group">
-                        <label for="student_email">ईमेल</label>
-                        <input type="email" id="student_email" name="student_email" class="form-control" placeholder="राहुल@example.com">
+                        <label for="student_email">Student Email</label>
+                        <input type="email" id="student_email" name="student_email" class="form-control" placeholder="student@example.com">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="dob">जन्मतारीख</label>
+                        <label for="dob">Date of Birth</label>
                         <input type="date" id="dob" name="dob" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="aadhaar">AADHAAR नंबर</label>
-                        <input type="text" id="aadhaar" name="aadhaar" class="form-control" placeholder="१२ अंकीय संख्या">
+                        <label for="aadhaar">Aadhaar Number</label>
+                        <input type="text" id="aadhaar" name="aadhaar" class="form-control" placeholder="12 digit number">
                     </div>
                 </div>
             </div>
 
             <div class="info-card">
-                <h3>वाळवाऱ्यांची माहिती</h3>
+                <h3>Parent/Guardian Information</h3>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="parent_name">नाव *</label>
-                        <input type="text" id="parent_name" name="parent_name" class="form-control" required placeholder="पिता/मा नाव">
+                        <label for="parent_name">Parent Name *</label>
+                        <input type="text" id="parent_name" name="parent_name" class="form-control" required placeholder="Father/Mother Name">
                     </div>
                     <div class="form-group">
-                        <label for="parent_mobile">मोबाईल *</label>
-                        <input type="tel" id="parent_mobile" name="parent_mobile" class="form-control" required placeholder="९८४११२३४५६">
+                        <label for="parent_mobile">Parent Mobile *</label>
+                        <input type="tel" id="parent_mobile" name="parent_mobile" class="form-control" required placeholder="9841123456">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="parent_email">ईमेल</label>
-                        <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="वडील@उदाहरण.com">
+                        <label for="parent_email">Parent Email</label>
+                        <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="parent@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="address">पत्ता *</label>
-                        <input type="text" id="address" name="address" class="form-control" required placeholder="गांव, तालुका, जिल्हा">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" class="form-control" required placeholder="Village, Taluka, District">
                     </div>
                 </div>
             </div>
 
             <div class="info-card">
-                <h3>इतर माहिती</h3>
+                <h3>Additional Information</h3>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="previous_school">आधीपासून शाळा</label>
-                        <input type="text" id="previous_school" name="previous_school" class="form-control" placeholder="जुनी शाळा">
+                        <label for="previous_school">Previous School</label>
+                        <input type="text" id="previous_school" name="previous_school" class="form-control" placeholder="School name">
                     </div>
                     <div class="form-group">
-                        <label for="language">भाषा</label>
+                        <label for="language">Preferred Language</label>
                         <select id="language" name="language" class="form-control">
-                            <option value="English">इंग्रजी</option>
-                            <option value="Hindi">हिंदी</option>
-                            <option value="Marathi">मराठी</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Marathi">Marathi</option>
                         </select>
                     </div>
                 </div>
             </div>
 
-            <button type="submit" class="btn-submit">नोंदणी पाठवा</button>
+            <button type="submit" class="btn-submit">Submit Registration</button>
         </form>
     </div>
 </main>
 
 <footer class="site-footer">
     <div class="container">
-        <p>संपर्क: +91-XXXXXXXXXX | info@mpeschool.org</p>
-        <p>&copy; 2025 Multi Purpose Engineering School, Gaudgaon</p>
+        <p>Contact: +91XXXXXXXXXX | admin@mpeschool.org</p>
+        <p>&copy; 1952 - 2025 Multi Purpose Engineering School, Gaudgaon, Maharashtra</p>
     </div>
 </footer>
 

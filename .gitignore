@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Zoho CLI
+.zc/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build output
+dist/
+build/
+
+# Temp files
+zc.exe
