@@ -7,23 +7,13 @@
     "EU",
     "IN"
   ],
-  "function": {
-    "source_dir": "functions",
-    "node_version": "20"
-  },
-  "database": {
-    "connection_name": "mongodb_connection"
-  },
-  "storage": {
-    "bucket_name": "catalyst-bucket"
+  "widget": {
+    "app_name": "college_site",
+    "source_dir": "widget"
   },
   "auth": {
     "domains": [
-      "https://tmp-college-site.netlify.app",
-      "https://mp-engineering-school.netlify.app"
+      "https://mp-engineering-school.zohocatalyst.com"
     ]
-  },
-  "cron": [],
-  "apis": [],
-  "integrations": []
+  }
 }
