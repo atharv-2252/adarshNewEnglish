@@ -1,0 +1,96 @@
+/* Multi Purpose Engineering School, Gaudgaon - Clean, Simple Design */
+:root {
+    --primary: #1a237e;
+    --primary-dark: #0d144b;
+    --secondary: #00b050;
+    --secondary-dark: #007d3a;
+    --bg: #ffffff;
+    --bg-light: #f8f9fa;
+    --text: #333333;
+    --text-light: #6c757d;
+    --border: #e0e0e0;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: var(--primary); transition: color 0.2s; }
+a:hover { color: var(--primary-dark); }
+ul { list-style: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+h1,h2,h3,h4 { font-weight: 600; margin-bottom: 1rem; }
+p { margin-bottom: 1rem; }
+
+/* Header */
+.site-header { background: var(--primary); color: white; padding: 1rem 0; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100; }
+.site-header .container { display: flex; align-items: center; gap: 1.5rem; }
+.logo-placeholder { background: var(--secondary); color: white; font-weight: bold; font-size: 1.5rem; width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.site-title { font-size: 1.5rem; font-weight: 700; margin: 0; }
+.site-tagline { font-size: 0.9rem; opacity: 0.9; margin: 0; }
+.site-nav { margin-left: auto; }
+.nav-list { display: flex; gap: 1.5rem; }
+.nav-link { color: white; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: background 0.2s; }
+.nav-link:hover { background: rgba(255,255,255,0.15); }
+.nav-link.active { background: var(--secondary); }
+
+/* Hero */
+.hero-section { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; text-align: center; padding: 4rem 2rem; }
+.hero-section h2 { font-size: 2rem; margin-bottom: 1rem; }
+.hero-section p { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; }
+.btn { display: inline-block; padding: 0.75rem 2rem; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+.btn-primary { background: var(--secondary); color: white; }
+.btn-primary:hover { background: var(--secondary-dark); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,176,80,0.3); }
+
+/* Sections */
+.quick-links { padding: 3rem 2rem; background: var(--bg-light); text-align: center; }
+.quick-links h2 { color: var(--primary-dark); margin-bottom: 1.5rem; }
+.link-list { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: 0 auto; }
+.link-list a { display: block; padding: 1rem; background: white; border-radius: 8px; box-shadow: var(--shadow); font-weight: 500; transition: transform 0.2s, box-shadow 0.2s; }
+.link-list a:hover { transform: translateX(5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); color: var(--primary); }
+
+.content-section { padding: 3rem 2rem; }
+.content-section h2 { color: var(--primary-dark); border-bottom: 3px solid var(--secondary); padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: inline-block; }
+.info-card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: var(--shadow); margin-bottom: 1.5rem; }
+.info-card h3 { color: var(--primary); margin-bottom: 0.75rem; }
+.d-flex { display: flex; gap: 2rem; flex-wrap: wrap; }
+.d-flex > div { flex: 1; min-width: 250px; }
+
+/* Registration Form */
+.register-section { padding: 3rem 2rem; background: var(--bg-light); }
+.register-section .container { max-width: 700px; }
+.register-section h2 { color: var(--primary-dark); text-align: center; margin-bottom: 0.5rem; }
+.register-section p { text-align: center; color: var(--text-light); margin-bottom: 2rem; }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--text); }
+.form-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.form-row .form-group { flex: 1; min-width: 250px; }
+.form-control { width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 6px; font-size: 1rem; transition: border-color 0.2s; }
+.form-control:focus { border-color: var(--secondary); outline: none; box-shadow: 0 0 0 3px rgba(0,176,80,0.15); }
+textarea.form-control { min-height: 120px; resize: vertical; }
+.btn-submit { width: 100%; background: var(--primary); color: white; font-size: 1.1rem; padding: 1rem; border-radius: 6px; border: none; cursor: pointer; transition: background 0.2s; }
+.btn-submit:hover { background: var(--primary-dark); }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+table th, table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+table th { background: var(--primary); color: white; font-weight: 600; }
+table tbody tr:hover { background: var(--bg-light); }
+
+/* Footer */
+.site-footer { background: var(--primary-dark); color: white; text-align: center; padding: 1.5rem; }
+.site-footer p { margin: 0; opacity: 0.7; font-size: 0.85rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .site-header .container { flex-direction: column; gap: 1rem; text-align: center; }
+    .nav-list { gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+    .hero-section { padding: 2.5rem 1rem; }
+    .d-flex { flex-direction: column; }
+    .form-row { flex-direction: column; }
+}
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+.color-primary { color: var(--primary); }
+.color-secondary { color: var(--secondary); }

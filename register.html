@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नोंदणी - Multi Purpose Engineering School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <div class="logo-placeholder">[LOGO]</div>
+        <h1 class="site-title">Multi Purpose Engineering School</h1>
+        <p class="site-tagline">गुंडगावन, जिल्हा सोलापुर (महाराष्ट्र)</p>
+    </div>
+    <nav class="site-nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">होम</a></li>
+            <li><a href="about.html" class="nav-link">आम्हाबद्दल</a></li>
+            <li><a href="admissions.html" class="nav-link">प्रवेश</a></li>
+            <li><a href="register.html" class="nav-link active">नोंदणी</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="register-section">
+    <div class="container">
+        <h2 class="text-center">विद्यार्थी नोंदणी</h2>
+        <p class="text-center">कृपया आवश्यक माहितीचा भरा</p>
+
+        <form id="registrationForm" action="https://formspree.io/f/xzedowzvy" method="POST">
+            <input type="hidden" name="_subject" value="નवीन વિદ્યાર્થી નોંધણી">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="info-card">
+                <h3>विद्यार्थी माहिती</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student_name">पूर्ण नाव *</label>
+                        <input type="text" id="student_name" name="student_name" class="form-control" required placeholder="उदा. राहुल शिंदे">
+                    </div>
+                    <div class="form-group">
+                        <label for="class_applied">कक्षा *</label>
+                        <select id="class_applied" name="class_applied" class="form-control" required>
+                            <option value="">निवडा</option>
+                            <option value="11th PCM">११थ - PCM</option>
+                            <option value="11th PCB">११थ - PCB</option>
+                            <option value="11th Commerce">११थ - Commerce</option>
+                            <option value="12th PCM">१२थ - PCM</option>
+                            <option value="12th PCB">१२थ - PCB</option>
+                            <option value="12th Commerce">१२थ - Commerce</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student_mobile">मोबाईल</label>
+                        <input type="tel" id="student_mobile" name="student_mobile" class="form-control" placeholder="९८४११२३४५६">
+                    </div>
+                    <div class="form-group">
+                        <label for="student_email">ईमेल</label>
+                        <input type="email" id="student_email" name="student_email" class="form-control" placeholder="राहुल@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">जन्मतारीख</label>
+                        <input type="date" id="dob" name="dob" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="aadhaar">AADHAAR नंबर</label>
+                        <input type="text" id="aadhaar" name="aadhaar" class="form-control" placeholder="१२ अंकीय संख्या">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>वाळवाऱ्यांची माहिती</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="parent_name">नाव *</label>
+                        <input type="text" id="parent_name" name="parent_name" class="form-control" required placeholder="पिता/मा नाव">
+                    </div>
+                    <div class="form-group">
+                        <label for="parent_mobile">मोबाईल *</label>
+                        <input type="tel" id="parent_mobile" name="parent_mobile" class="form-control" required placeholder="९८४११२३४५६">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="parent_email">ईमेल</label>
+                        <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="वडील@उदाहरण.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">पत्ता *</label>
+                        <input type="text" id="address" name="address" class="form-control" required placeholder="गांव, तालुका, जिल्हा">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>इतर माहिती</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="previous_school">आधीपासून शाळा</label>
+                        <input type="text" id="previous_school" name="previous_school" class="form-control" placeholder="जुनी शाळा">
+                    </div>
+                    <div class="form-group">
+                        <label for="language">भाषा</label>
+                        <select id="language" name="language" class="form-control">
+                            <option value="English">इंग्रजी</option>
+                            <option value="Hindi">हिंदी</option>
+                            <option value="Marathi">मराठी</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">नोंदणी पाठवा</button>
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>संपर्क: +91-XXXXXXXXXX | info@mpeschool.org</p>
+        <p>&copy; 2025 Multi Purpose Engineering School, Gaudgaon</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
