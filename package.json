@@ -1,0 +1,23 @@
+{
+  "name": "mp-engineering-school",
+  "version": "1.0.0",
+  "description": "Multi Purpose Engineering School, Gaudgaon - Static college website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "zc cli push",
+    "serve": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvtg2252/mp-engineering-school.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/atharvtg2252/mp-engineering-school/issues"
+  },
+  "homepage": "https://github.com/atharvtg2252/mp-engineering-school#readme"
+}
