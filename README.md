@@ -33,7 +33,7 @@ Form posts to Formspree: `https://formspree.io/f/xzedowzvy`
 Configure in Formspree dashboard → add admin email for submissions.
 
 ## TODO (before launch)
-- [ ] Replace contact placeholders (+91-XXXXXXXXXX, info@mpeschool.org)
-- [ ] Add school logo SVG/PNG
-- [ ] Fill real About/Admissions content
-- [ ] Update Formspree admin email
+- [x] Replace contact placeholders (+91-XXXXXXXXXX, info@mpeschool.org)
+- [x] Add school logo SVG/PNG
+- [x] Fill real About/Admissions content
+- [x] Update Formspree admin email
