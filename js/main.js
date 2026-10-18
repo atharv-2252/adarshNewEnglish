@@ -221,19 +221,24 @@
                 Accept: "application/json",
             },
         })
-            .then((response) => {
-                if (response.ok) {
-                    registrationForm.reset();
-                    displaySuccessMessage(registrationForm);
-                } else {
-                    return response.json().then(() => {
-                        throw new Error("नोंदणीपत्र पाठविण्यात अयशी. कृपया पुरत्र प्रयत्न करा.");
-                    });
+            .then(async (response) => {
+                if (!response.ok) {
+                    let message = `Submission failed (HTTP ${response.status}). Please try again.`;
+                    try {
+                        const result = await response.json();
+                        if (result.errors && result.errors.length > 0) {
+                            message = result.errors.map((error) => error.message).join(" ");
+                        }
+                    } catch (_) {
+                        // Use the HTTP status fallback when no JSON response is available.
+                    }
+                    throw new Error(message);
                 }
+
+                registrationForm.reset();
+                displaySuccessMessage(registrationForm);
             })
-            .catch(() => {
-                // For demo/testing: show success anyway since Formspree works
-                // In production, this would show the error
+            .catch((error) => {
                 const errorDiv = document.createElement("div");
                 errorDiv.className = "error-message";
                 errorDiv.style.backgroundColor = "#ffcdd2";
@@ -242,7 +247,9 @@
                 errorDiv.style.borderRadius = "4px";
                 errorDiv.style.marginBottom = "1rem";
                 errorDiv.style.border = "1px solid #ef9a9a";
-                errorDiv.textContent = "संदेश पाठविण्यात अडचण येऊ शकते. कृपया मोबाईल नंबर द्यून संपर्क साधा: +91-XXXXXXXXXX";
+                errorDiv.textContent = error instanceof TypeError
+                    ? "Could not reach Formspree. Check your internet connection and try again."
+                    : error.message;
                 registrationForm.insertBefore(errorDiv, registrationForm.firstChild);
             })
             .finally(() => {

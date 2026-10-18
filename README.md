@@ -28,7 +28,7 @@ Then: Settings → Pages → Source: main / (root) → Save.
 
 ## Registration
 
-Form posts to Formspree: `https://formspree.io/f/xzedowzvy`
+Form posts to Formspree: `https://formspree.io/f/xzedowzv`
 
 Configure in Formspree dashboard → add admin email for submissions.
 
@@ -98,7 +98,7 @@ Configure in `.catalyst` file:
 ```json
 {
   "env_vars": {
-    "FORM_ENDPOINT": "https://formspree.io/f/xzedowzvy"
+    "FORM_ENDPOINT": "https://formspree.io/f/xzedowzv"
   }
 }
 ```
