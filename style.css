@@ -101,11 +101,13 @@ body {
 .hero-section {
   position: relative;
   width: 100%;
-  background: linear-gradient(135deg, #0b2e8a 0%, #1e3a8a 50%, #1d4ed8 100%);
+  background: linear-gradient(rgba(11, 46, 138, 0.75), rgba(11, 46, 138, 0.85)), url('college-photo.jpg');
+  background-size: cover;
+  background-position: center center;
   color: #ffffff;
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
   text-align: center;
-  box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 80px rgba(0,0,0,0.4);
 }
 
 .hero-overlay {
