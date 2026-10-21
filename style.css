@@ -1,0 +1,230 @@
+/* Basic Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  color: #1e293b;
+}
+
+/* ================= HEADER & NAVBAR ================= */
+.main-header {
+  background-color: #0b2e8a; /* Deep Royal Blue */
+  color: #ffffff;
+  padding: 12px 35px 0 35px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.school-logo {
+  width: 50px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title-group {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.title-group h1 {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.title-group .address {
+  font-size: 13px;
+  color: #dbeafe;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 8px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+  opacity: 0.85;
+}
+
+.nav-link.active, .btn-nav-green {
+  background-color: #16a34a; /* Vibrant Green */
+  color: #ffffff;
+  padding: 7px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ================= HERO SECTION (MAIN IMAGE ADJUSTMENT) ================= */
+.hero-section {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 5;
+  min-height: 340px;
+  max-height: 430px;
+
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
+    url('college-photo.jpg');
+
+  background-size: 100% auto;
+  background-position: center 54%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  max-width: 850px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.hero-overlay h2 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 14px;
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay p {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 26px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: #12a146;
+  color: #ffffff;
+  padding: 13px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-hero:hover {
+  background-color: #0e873a;
+  transform: translateY(-2px);
+}
+
+/* ================= QUICK LINKS SECTION ================= */
+.quick-links-section {
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+.quick-links-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+.links-container {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eef0f4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 38px;
+  height: 38px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.link-text {
+  flex-grow: 1;
+  text-align: center;
+  padding-right: 38px;
+}
+
+/* Footer */
+.site-footer { background: #0b2e8a; color: white; text-align: center; padding: 1.5rem; margin-top: 2rem; }
+.site-footer p { margin: 0; opacity: 0.9; font-size: 0.9rem; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-overlay h2 {
+    font-size: 26px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
