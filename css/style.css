@@ -38,7 +38,20 @@ p { margin-bottom: 1rem; }
 .nav-link.active { background: var(--secondary); }
 
 /* Hero */
-.hero-section { background: linear-gradient(rgba(13, 20, 75, 0.75), rgba(26, 35, 126, 0.75)), url('../assets/college-photo.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 6rem 2rem; }
+.hero-section {
+    background: linear-gradient(rgba(13, 20, 75, 0.65), rgba(13, 20, 75, 0.65)), url('../assets/college-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section .container { width: 100%; max-width: 900px; }
 .hero-section h2 { font-size: 2rem; margin-bottom: 1rem; }
 .hero-section p { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; }
 .btn { display: inline-block; padding: 0.75rem 2rem; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
