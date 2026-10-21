@@ -1,0 +1,267 @@
+/* Basic Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* ================= HEADER & NAVBAR ================= */
+.main-header {
+  background-color: #0b2e8a; /* Deep Royal Blue */
+  color: #ffffff;
+  padding: 18px 35px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 12px;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title-group h1 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.title-group .address {
+  font-size: 13px;
+  color: #dbeafe;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav-link.active, .btn-nav-green {
+  background-color: #16a34a; /* Vibrant Green */
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-nav-green:hover {
+  background-color: #15803d;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #0b2e8a 0%, #1e3a8a 50%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+  box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-overlay {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-overlay h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: #16a34a;
+  color: #ffffff;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-hero:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* ================= CONTENT & QUICK LINKS SECTIONS ================= */
+.quick-links-section, .content-section, .register-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.quick-links-section h3, .content-section h2, .register-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b2e8a;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.register-section p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #0b2e8a;
+}
+
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #eff6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b2e8a;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.link-text {
+  flex-grow: 1;
+}
+
+/* Info Cards (Spacious, clean, un-congested) */
+.info-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  border: 1px solid #e2e8f0;
+}
+.info-card h3 { color: #0b2e8a; margin-bottom: 1.25rem; font-size: 22px; }
+.d-flex { display: flex; gap: 2rem; flex-wrap: wrap; }
+.d-flex > div { flex: 1; min-width: 280px; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 1rem; }
+table th, table td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+table th { background: #0b2e8a; color: white; font-weight: 600; }
+table tbody tr:hover { background: #f8fafc; }
+
+/* Registration Form (Spacious, clean, un-congested) */
+.form-group { margin-bottom: 1.75rem; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 0.6rem; color: #1e293b; font-size: 15px; }
+.form-row { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.form-row .form-group { flex: 1; min-width: 280px; }
+.form-control { width: 100%; padding: 0.95rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; transition: border-color 0.2s; background: #fff; }
+.form-control:focus { border-color: #16a34a; outline: none; box-shadow: 0 0 0 3px rgba(22,163,74,0.15); }
+select.form-control { cursor: pointer; }
+textarea.form-control { min-height: 130px; resize: vertical; }
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  background: #16a34a;
+  color: white;
+  font-size: 1.15rem;
+  padding: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(22,163,74,0.3);
+  margin-top: 1rem;
+}
+.btn-submit:hover {
+  background: #15803d;
+  box-shadow: 0 6px 20px rgba(22,163,74,0.4);
+}
+
+/* Footer */
+.site-footer { background: #0b2e8a; color: white; text-align: center; padding: 2.5rem 2rem; margin-top: 4rem; }
+.site-footer p { margin: 0; opacity: 0.9; font-size: 0.95rem; line-height: 1.6; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-overlay h2 { font-size: 26px; }
+  .navbar { flex-direction: column; gap: 12px; }
+  .nav-left, .nav-right { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .info-card { padding: 1.5rem; }
+}
