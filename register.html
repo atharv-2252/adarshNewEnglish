@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - Multi Purpose Adarsh New English School</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Multi Purpose Adarsh New English School</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header class="site-header">
-    <div class="container header-container">
-        <div class="header-left">
-            <div class="logo">
-                <img src="assets/college-photo.jpg" alt="Logo" class="logo-img">
-            </div>
-            <div>
-                <h1 class="site-title">Multi Purpose Adarsh New English School</h1>
-                <p class="site-tagline">At Post Gaudgaon, Tal Barshi, District Solapur, Maharashtra</p>
-            </div>
+
+  <!-- Top Header & Navigation -->
+  <header class="main-header">
+    <div class="header-top">
+      <div class="title-group">
+        <h1>Multi Purpose Adarsh New English School</h1>
+        <span class="address">At Post Gaudgaon, Tal Barshi, District Solapur, Maharashtra</span>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="register.html" class="nav-link active">Register</a>
+      </div>
+      <div class="nav-right">
+        <a href="register.html" class="btn-nav-green">Register Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="register-section">
+    <h2>Student Registration</h2>
+    <p>Please fill out the required information to apply for admission</p>
+
+    <form id="registrationForm" action="https://formspree.io/f/xzedowzv" method="POST">
+      <input type="hidden" name="_subject" value="New Student Registration - Adarsh New English School">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="info-card">
+        <h3>Student Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="student_name">Full Name *</label>
+            <input type="text" id="student_name" name="student_name" class="form-control" required placeholder="e.g. Rahul Shinde">
+          </div>
+          <div class="form-group">
+            <label for="class_applied">Applied For Stream *</label>
+            <select id="class_applied" name="class_applied" class="form-control" required>
+              <option value="">Select Stream & Class</option>
+              <option value="11th PCM">11th - PCM</option>
+              <option value="11th PCB">11th - PCB</option>
+              <option value="11th PCMB">11th - PCMB</option>
+              <option value="11th Commerce">11th - Commerce</option>
+              <option value="11th Arts">11th - Arts</option>
+              <option value="12th PCM">12th - PCM</option>
+              <option value="12th PCB">12th - PCB</option>
+              <option value="12th PCMB">12th - PCMB</option>
+              <option value="12th Commerce">12th - Commerce</option>
+              <option value="12th Arts">12th - Arts</option>
+            </select>
+          </div>
         </div>
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
-                <li><a href="register.html" class="nav-link btn-nav active">Register</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="student_mobile">Student Mobile</label>
+            <input type="tel" id="student_mobile" name="student_mobile" class="form-control" placeholder="9841123456">
+          </div>
+          <div class="form-group">
+            <label for="student_email">Student Email</label>
+            <input type="email" id="student_email" name="student_email" class="form-control" placeholder="student@example.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="aadhaar">Aadhaar Number</label>
+            <input type="text" id="aadhaar" name="aadhaar" class="form-control" placeholder="12 digit number">
+          </div>
+        </div>
+      </div>
 
-<main class="register-section">
+      <div class="info-card">
+        <h3>Parent/Guardian Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parent_name">Parent Name *</label>
+            <input type="text" id="parent_name" name="parent_name" class="form-control" required placeholder="Father/Mother Name">
+          </div>
+          <div class="form-group">
+            <label for="parent_mobile">Parent Mobile *</label>
+            <input type="tel" id="parent_mobile" name="parent_mobile" class="form-control" required placeholder="9841123456">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parent_email">Parent Email</label>
+            <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="parent@example.com">
+          </div>
+          <div class="form-group">
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" class="form-control" required placeholder="At Post Gaudgaon, Tal Barshi, Dist Solapur">
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Additional Information</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="previous_school">Previous School</label>
+            <input type="text" id="previous_school" name="previous_school" class="form-control" placeholder="School name">
+          </div>
+          <div class="form-group">
+            <label for="language">Preferred Language</label>
+            <select id="language" name="language" class="form-control">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Marathi">Marathi</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="container">
-        <h2 class="text-center">Student Registration</h2>
-        <p class="text-center">Please fill out the required information</p>
-
-        <form id="registrationForm" action="https://formspree.io/f/xzedowzv" method="POST">
-            <input type="hidden" name="_subject" value="New Student Registration - Adarsh New English School">
-            <input type="hidden" name="_captcha" value="false">
-
-            <div class="info-card">
-                <h3>Student Information</h3>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="student_name">Full Name *</label>
-                        <input type="text" id="student_name" name="student_name" class="form-control" required placeholder="e.g. Rahul Shinde">
-                    </div>
-                    <div class="form-group">
-                        <label for="class_applied">Applied For Stream *</label>
-                        <select id="class_applied" name="class_applied" class="form-control" required>
-                            <option value="">Select Stream & Class</option>
-                            <option value="11th PCM">11th - PCM</option>
-                            <option value="11th PCB">11th - PCB</option>
-                            <option value="11th PCMB">11th - PCMB</option>
-                            <option value="11th Commerce">11th - Commerce</option>
-                            <option value="11th Arts">11th - Arts</option>
-                            <option value="12th PCM">12th - PCM</option>
-                            <option value="12th PCB">12th - PCB</option>
-                            <option value="12th PCMB">12th - PCMB</option>
-                            <option value="12th Commerce">12th - Commerce</option>
-                            <option value="12th Arts">12th - Arts</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="student_mobile">Student Mobile</label>
-                        <input type="tel" id="student_mobile" name="student_mobile" class="form-control" placeholder="9841123456">
-                    </div>
-                    <div class="form-group">
-                        <label for="student_email">Student Email</label>
-                        <input type="email" id="student_email" name="student_email" class="form-control" placeholder="student@example.com">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="dob">Date of Birth</label>
-                        <input type="date" id="dob" name="dob" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="aadhaar">Aadhaar Number</label>
-                        <input type="text" id="aadhaar" name="aadhaar" class="form-control" placeholder="12 digit number">
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-card">
-                <h3>Parent/Guardian Information</h3>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="parent_name">Parent Name *</label>
-                        <input type="text" id="parent_name" name="parent_name" class="form-control" required placeholder="Father/Mother Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="parent_mobile">Parent Mobile *</label>
-                        <input type="tel" id="parent_mobile" name="parent_mobile" class="form-control" required placeholder="9841123456">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="parent_email">Parent Email</label>
-                        <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="parent@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address *</label>
-                        <input type="text" id="address" name="address" class="form-control" required placeholder="At Post Gaudgaon, Tal Barshi, Dist Solapur">
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-card">
-                <h3>Additional Information</h3>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="previous_school">Previous School</label>
-                        <input type="text" id="previous_school" name="previous_school" class="form-control" placeholder="School name">
-                    </div>
-                    <div class="form-group">
-                        <label for="language">Preferred Language</label>
-                        <select id="language" name="language" class="form-control">
-                            <option value="English">English</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Marathi">Marathi</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <button type="submit" class="btn-submit">Submit Registration</button>
-        </form>
+      <p>Principal: Suraj Sampatrav Kakade | Contact: +91-9822763606 | Email: Mpanesg@gmail.com</p>
+      <p>&copy; Multi Purpose Adarsh New English School, At Post Gaudgaon, Tal Barshi, District Solapur, Maharashtra</p>
     </div>
-</main>
+  </footer>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>Principal: Suraj Sampatrav Kakade | Contact: +91-9822763606 | Email: Mpanesg@gmail.com</p>
-        <p>&copy; Multi Purpose Adarsh New English School, At Post Gaudgaon, Tal Barshi, District Solapur, Maharashtra</p>
-    </div>
-</footer>
-
-<script src="js/main.js"></script>
 </body>
 </html>
